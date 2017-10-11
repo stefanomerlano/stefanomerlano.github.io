@@ -4,7 +4,7 @@ All credits for
 
 Inspiration
 
-[Blith Rocher]http://blitherocher.com/index.html
+[Blith Rocher](http://blitherocher.com/index.html)
 
 Theme
 
