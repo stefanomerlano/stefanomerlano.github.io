@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        window.oncontextmenu = function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        };
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+            document.body.style.backgroundColor = "black";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+            document.body.style.backgroundColor = "brown";
+        }
+
+        document.onkeypress = function (e) {
+            e = e || window.event;
+            console.log(e.keyCode);
+            if (e.keyCode == 111) {
+                on();
+            }
+            if (e.keyCode == 112) {
+                off();
+            }
+        };
+
+    </script>
+</head>
+
+<body>
+    <div id="overlay"></div>
+     <iframe frameborder="0" height="100%" width="99%" src="https://www.youtube.com/embed/MkUZ27rnzMk"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+    </iframe> 
+</body>
+
+</html>
